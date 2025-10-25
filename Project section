@@ -1,0 +1,42 @@
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects section">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project">
+        <img src="https://placehold.co/400x250/222/fff?text=Weather+App" alt="Weather App Screenshot" />
+        <div class="project-info">
+          <h3>Weather App</h3>
+          <p>A simple weather dashboard that fetches real-time weather data for any city using an external API. Features a clean UI and responsive design.</p>
+          <a href="#" target="_blank" class="btn">View Project</a>
+        </div>
+      </div>
+      <div class="project">
+        <img src="https://placehold.co/400x250/222/fff?text=Task+Manager" alt="Task Manager Screenshot" />
+        <div class="project-info">
+          <h3>Task Manager</h3>
+          <p>Organize your daily tasks efficiently. Add, edit, and delete tasks with ease. Built with React and local storage for persistence.</p>
+          <a href="#" target="_blank" class="btn">View Project</a>
+        </div>
+      </div>
+      <div class="project">
+        <img src="https://placehold.co/400x250/222/fff?text=Portfolio+Template" alt="Portfolio Template Screenshot" />
+        <div class="project-info">
+          <h3>Portfolio Template</h3>
+          <p>A modern portfolio template for developers. Fully responsive with a focus on clean typography and usability.</p>
+          <a href="#" target="_blank" class="btn">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills section">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+    </ul>
+  </section>

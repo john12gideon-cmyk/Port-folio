@@ -1,0 +1,19 @@
+<!-- Hero Section -->
+  <header class="hero">
+    <nav class="navbar">
+      <span class="logo">JG</span>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </nav>
+    <div class="hero-content">
+      <h1>John Gideon</h1>
+      <h2>Frontend Developer</h2>
+      <p>
+        Passionate about crafting engaging web experiences. I specialize in building responsive, accessible interfaces with modern technologies.
+      </p>
+    </div>
+  </header>

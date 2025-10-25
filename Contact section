@@ -1,0 +1,18 @@
+<!-- Contact Section -->
+  <section id="contact" class="contact section">
+    <h2>Contact</h2>
+    <p>
+      Let's connect! Reach me at <a href="mailto:john12gideon@gmail.com">john12gideon@gmail.com</a>
+    </p>
+    <div class="social-links">
+      <a href="https://github.com/john12gideon-cmyk" target="_blank" aria-label="GitHub">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+      </a>
+      <a href="#" target="_blank" aria-label="Twitter">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="Twitter" />
+      </a>
+      <a href="#" target="_blank" aria-label="LinkedIn">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" />
+      </a>
+    </div>
+  </section>

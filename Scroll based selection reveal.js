@@ -14,7 +14,3 @@ const observer = new IntersectionObserver(entries => {
 sections.forEach(section => {
   observer.observe(section);
 });
-
-// ======= Console Easter Egg =======
-console.log("%cHey there, curious dev! 👋", "color: #0ff; font-size: 16px;");
-console.log("Built by John Gideon — explore the code, stay inspired!");

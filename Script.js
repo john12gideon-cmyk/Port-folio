@@ -15,11 +15,6 @@ sections.forEach(section => {
   observer.observe(section);
 });
 
-// Load saved theme
-if (localStorage.getItem("theme") === "dark") {
-  document.body.classList.add("dark-mode");
-}
-
 // ======= Console Easter Egg =======
 console.log("%cHey there, curious dev! 👋", "color: #0ff; font-size: 16px;");
 console.log("Built by John Gideon — explore the code, stay inspired!");

@@ -27,18 +27,6 @@ if (localStorage.getItem("theme") === "dark") {
   document.body.classList.add("dark-mode");
 }
 
-// ======= Typewriter Text Enhancement =======
-const typewriter = document.querySelector(".typewriter");
-const phrases = ["Frontend Developer", "UI/UX Enthusiast", "React Wizard"];
-let phraseIndex = 0;
-
-function rotateTypewriter() {
-  typewriter.textContent = phrases[phraseIndex];
-  phraseIndex = (phraseIndex + 1) % phrases.length;
-}
-
-setInterval(rotateTypewriter, 4000);
-
 // ======= Contact Form Validation =======
 const contactForm = document.querySelector("form");
 if (contactForm) {

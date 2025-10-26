@@ -19,6 +19,7 @@
     </nav>
     <div class="hero-content">
       <h1>John Gideon</h1>
+      <div class="tech-animation"></div>
       <h2>Frontend Developer</h2>
       <p>
        Hey There! 👋 Let me tell you what I can do: Passionate about crafting engaging web experiences. I specialize in building responsive, accessible interfaces with modern technologies for small, large bussiness and schools.

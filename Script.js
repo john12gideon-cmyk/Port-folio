@@ -27,24 +27,6 @@ if (localStorage.getItem("theme") === "dark") {
   document.body.classList.add("dark-mode");
 }
 
-// ======= Contact Form Validation =======
-const contactForm = document.querySelector("form");
-if (contactForm) {
-  contactForm.addEventListener("submit", function (e) {
-    const email = contactForm.querySelector("input[type='email']");
-    const message = contactForm.querySelector("textarea");
-    const name = contactForm.querySelector("input[type='text']");
-
-    if (!email.value || !message.value || !name.value) {
-      e.preventDefault();
-      alert("Please fill out all fields.");
-    } else if (!/\S+@\S+\.\S+/.test(email.value)) {
-      e.preventDefault();
-      alert("Please enter a valid email address.");
-    }
-  });
-}
-
 // ======= Console Easter Egg =======
 console.log("%cHey there, curious dev! 👋", "color: #0ff; font-size: 16px;");
 console.log("Built by John Gideon — explore the code, stay inspired!");

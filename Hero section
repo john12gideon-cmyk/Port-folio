@@ -18,7 +18,7 @@
       <div class="menu-toggle" id="menu-toggle">&#9776;</div>
     </nav>
     <div class="hero-content">
-      <h1>John Gideon</h1>
+      <h1 class="typewriter">John Gideon</h1>
       <div class="tech-animation"></div>
       <h2>Frontend Developer</h2>
       <p>

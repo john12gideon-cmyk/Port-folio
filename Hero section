@@ -1,12 +1,125 @@
-<nav>
-  <ul>
-    <li><a href="hero.html">🧑‍💻 Hero</a></li>
-    <li><a href="projects.html">🛠️ Projects</a></li>
-    <li><a href="contact.html">📞 Contact</a></li>
-  </ul>
-</nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>John Gideon Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
 
-<!-- Hero Section -->
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+      background-color: #111;
+    }
+
+    nav ul li a {
+      color: #0ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      padding: 40px;
+      text-align: center;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #0ff;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links li a {
+      color: #f0f;
+      text-decoration: none;
+    }
+
+    .menu-toggle {
+      font-size: 24px;
+      cursor: pointer;
+      color: #fff;
+    }
+
+    .hero-content h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .hero-content h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #0ff;
+    }
+
+    /* Neon Box Styles */
+    .neon-box {
+      position: relative;
+      padding: 30px 40px;
+      margin: 40px auto;
+      max-width: 700px;
+      background-color: #111;
+      border-radius: 12px;
+      color: #fff;
+      font-size: 18px;
+      overflow: hidden;
+    }
+
+    .neon-box::before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+      background: linear-gradient(90deg, #0ff, #f0f, #0ff);
+      z-index: -1;
+      border-radius: 14px;
+      animation: neon-glow 2s linear infinite;
+      background-size: 200% 200%;
+      filter: blur(8px);
+    }
+
+    @keyframes neon-glow {
+      0% {
+        background-position: 0% 50%;
+      }
+      100% {
+        background-position: 100% 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="hero.html">🧑‍💻 Hero</a></li>
+      <li><a href="projects.html">🛠️ Projects</a></li>
+      <li><a href="contact.html">📞 Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
   <header class="hero">
     <nav class="navbar">
       <span class="logo">JG</span>
@@ -21,8 +134,13 @@
       <h1 class="typewriter">John Gideon</h1>
       <div class="tech-animation"></div>
       <h2>Frontend Developer</h2>
-      <p>
-       Hey There! 👋 Let me tell you what I can do: Passionate about crafting engaging web experiences. I specialize in building responsive, accessible interfaces with modern technologies for small, large bussiness and schools.
-      </p>
+
+      <!-- Neon Glowing Box Around the Text -->
+      <div class="neon-box">
+        Hey There! 👋 Let me tell you what I can do: Passionate about crafting engaging web experiences. I specialize in building responsive, accessible interfaces with modern technologies for small, large businesses and schools.
+      </div>
     </div>
   </header>
+
+</body>
+</html>

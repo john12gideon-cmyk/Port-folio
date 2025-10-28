@@ -76,30 +76,6 @@ nav a:hover {
   padding: 60px 20px;
   text-align: center;
   animation: glowBorder 2s infinite alternate;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  color: var(--neon);
-  text-shadow: var(--border-glow);
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 2px solid var(--neon);
-  animation: typewriter 4s steps(30) 1s 1 normal both, blinkCursor 0.7s infinite;
-}
-
-.hero h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: var(--text-light);
-}
-
-.hero p {
-  max-width: 700px;
-  margin: 0 auto;
-  font-size: 1.1rem;
-  color: var(--text-muted);
-}
 
 /* Neon Section Styling */
 .section {
@@ -379,4 +355,3 @@ nav ul li a {
   100% {
     background-position: 100% 50%;
   }
-}

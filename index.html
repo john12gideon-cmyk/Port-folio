@@ -19,13 +19,14 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
     <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <button class="dark-mode-toggle" aria-label="Toggle Dark Mode">🌓</button>
   </nav>
 
   <!-- Hero Section -->
   <header id="hero" class="hero section">
     <div class="hero-content">
       <h1 class="typewriter">John Gideon</h1>
-      <h2>Frontend Developer</h2>
+      <h2 id="typewriter-sub">Frontend Developer</h2>
       <div class="neon-box">
         Hey There! 👋 Let me tell you what I can do: Passionate about crafting engaging web experiences. I specialize in building responsive, accessible interfaces with modern technologies for small, large businesses and schools.
       </div>
@@ -77,16 +78,20 @@
   <!-- Contact Section -->
   <section id="contact" class="contact section">
     <h2>Contact</h2>
-    <p>
-      Let's connect! Reach me at <a href="mailto:john12gideon@gmail.com">john12gideon@gmail.com</a>
-    </p>
-    <p>Feel free to contact me on: <a href="tel:+2347056826411">+2348061387649</a></p>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+    <p>Or reach me directly at <a href="mailto:john12gideon@gmail.com">john12gideon@gmail.com</a> or <a href="tel:+2347056826411">+2348061387649</a></p>
+    <p>You can also check me out on <a href="https://www.facebook.com/profile.php?id=61572820620644" target="_blank">Facebook</a></p>
     <div class="social-links">
       <a href="https://github.com/john12gideon-cmyk" target="_blank" aria-label="GitHub">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
       </a>
-      <a href="#" target="_blank" aria-label="Twitter">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="Twitter" />
+      <a href="https://www.facebook.com/profile.php?id=61572820620644" target="_blank" aria-label="Facebook">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" />
       </a>
       <a href="#" target="_blank" aria-label="LinkedIn">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" />

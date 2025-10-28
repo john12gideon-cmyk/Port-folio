@@ -7,9 +7,10 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-nav {
+.navbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px;
   background-color: #222;
 }
@@ -112,8 +113,9 @@ nav {
 }
 
 .social-links img {
-  width: 32px;
-  margin: 0 10px;
+  width: 24px;
+  height: 24px;
+  margin: 0 8px;
 }
 
 /* ===== Footer ===== */

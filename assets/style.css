@@ -1,4 +1,4 @@
-/* Reset & Base Styles */
+/* Reset & Base */
 * {
   margin: 0;
   padding: 0;
@@ -7,28 +7,24 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #fff;
-  color: #333;
-  line-height: 1.6;
+  background-color: #fdfdfd;
+  color: #222;
   transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-section {
-  padding: 40px 20px;
+  line-height: 1.6;
 }
 
 /* Dark Mode */
 body.dark-mode {
-  background-color: #111;
-  color: #eee;
+  background-color: #121212;
+  color: #e0e0e0;
 }
 
 body.dark-mode .navbar {
-  background-color: #222;
+  background-color: #1e1e1e;
 }
 
 body.dark-mode .btn {
-  background-color: #444;
+  background-color: #333;
   color: #fff;
 }
 
@@ -37,21 +33,23 @@ body.dark-mode .btn {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
-  background-color: #f4f4f4;
+  padding: 16px 24px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
-.navbar .logo {
-  font-size: 1.5rem;
+.logo {
+  font-size: 1.6rem;
   font-weight: bold;
+  color: #0077ff;
 }
 
 .nav-links {
   display: flex;
-  gap: 20px;
+  gap: 24px;
   list-style: none;
 }
 
@@ -59,43 +57,49 @@ body.dark-mode .btn {
   text-decoration: none;
   color: #333;
   font-weight: 500;
+  transition: color 0.2s ease;
 }
 
-/* Mobile Menu Toggle */
+.nav-links li a:hover {
+  color: #0077ff;
+}
+
+/* Mobile Menu */
 .menu-toggle {
   display: none;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   cursor: pointer;
 }
 
 .nav-links.active {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
-/* Dark Mode Toggle Button */
+/* Dark Mode Button */
 .dark-mode-toggle {
   background: none;
   border: none;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   cursor: pointer;
 }
 
 /* Hero Section */
 .hero {
   text-align: center;
-  background-color: #fafafa;
+  padding: 60px 20px;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  font-size: 2.8rem;
+  color: #0077ff;
 }
 
 .hero h2 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: #555;
+  margin-top: 10px;
 }
 
 .neon-box {
@@ -105,18 +109,21 @@ body.dark-mode .btn {
   color: #0ff;
   background-color: #000;
   font-weight: bold;
+  border-radius: 8px;
 }
 
 /* Projects */
 .projects .project-list {
   display: grid;
-  gap: 30px;
+  gap: 40px;
+  padding: 20px;
 }
 
 .project {
   background-color: #f9f9f9;
-  border-radius: 8px;
+  border-radius: 10px;
   overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 .project img {
@@ -130,19 +137,27 @@ body.dark-mode .btn {
 
 .project-info h3 {
   margin-bottom: 10px;
+  font-size: 1.4rem;
 }
 
 .project-info p {
   margin-bottom: 15px;
+  font-size: 0.95rem;
+  color: #555;
 }
 
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #333;
+  background-color: #0077ff;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #005fcc;
 }
 
 /* Skills */
@@ -151,7 +166,7 @@ body.dark-mode .btn {
   flex-wrap: wrap;
   gap: 15px;
   list-style: none;
-  padding: 0;
+  padding: 20px;
 }
 
 .skills-list li {
@@ -167,8 +182,68 @@ body.dark-mode .btn {
   flex-direction: column;
   gap: 15px;
   margin-bottom: 20px;
+  padding: 20px;
 }
 
 .contact input,
 .contact textarea {
-  padding
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.contact .btn {
+  align-self: flex-start;
+}
+
+/* Social Icons */
+.social-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.social-links img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero h2 {
+    font-size: 1.3rem;
+  }
+
+  .skills-list {
+    flex-direction: column;
+  }
+  }
